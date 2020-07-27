@@ -10,11 +10,25 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var background: UIImageView!
+    
+    @IBOutlet weak var titleimage: UIImageView!
+    
+    @IBOutlet weak var welcomebutton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
 
-
+    @IBAction func Welcomepressed(_ sender: Any) {
+        
+        background.isHidden = false
+        titleimage.isHidden = false
+        welcomebutton.isHidden = true
+        
+        
+    }
+    
+    
 }
 
